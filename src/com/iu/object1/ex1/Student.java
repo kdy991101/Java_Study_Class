@@ -8,6 +8,7 @@ public class Student {
 		int m;
 		int avg;
 		int aver;
-		
+//		class명은 student
+//		class는 사용자가 정의한 데이터 타입이다.
 		
 }
