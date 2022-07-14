@@ -3,6 +3,17 @@ package com.iu.object1.ex1;
 import java.util.Scanner;
 
 public class StudentController {
+	Scanner sc;
+	StudentController st;
+	StudentService ss;
+	StudentView sv;
+	Student [] sts;
+	public StudentController() {
+		sc = new Scanner(System.in);
+		sv = new StudentView();
+		st = new StudentController();
+		
+	}
 		public void start() {
 //			1.학생 정보 조회
 //			2.학생 정보 입력
@@ -10,13 +21,13 @@ public class StudentController {
 //			4.학생 정보 삭제
 //			5.학생 정보 추가
 //			6.프로그램 종료
-			Scanner sc = new Scanner(System.in);
-			Student [] sts = null;
+			sc = new Scanner(System.in);
+			sts = null;
 			Student stss = null;
 			Student fs = null;
-			StudentController st = new StudentController();
-			StudentService ss = new StudentService();
-			StudentView sv = new StudentView();
+			st = new StudentController();
+			ss = new StudentService();
+			sv = new StudentView();
 			
 			
 			boolean b = true;
@@ -51,6 +62,7 @@ public class StudentController {
 			}else if(ch == 4)
 			{
 				System.out.println("4");
+				ss.addStudent(null);
 			}else 
 			{
 				System.out.println("프로그램을 종료합니다");
