@@ -24,7 +24,7 @@ public class StudentService {
 	Student student = null;
 	
 	for(int i = 0; i < students.length; i++) {
-		if(students[i].number == num) {
+		if(students[i].getNumber() == num) {
 			student = students[i];
 			break;
 		}
@@ -47,30 +47,40 @@ public class StudentService {
 				{		Student st = new Student();
 						sts[i] = st;
 						System.out.println("이름을 입력하세요");
-						sts[i].names = sc.next();
+						sts[i].setNames(sc.next());
 						System.out.println("번호를 입력하세요");
-						sts[i].number = sc.nextInt();
+						sts[i].setNumber(sc.nextInt());
 						System.out.println("국어 점수를 입력하세요");
-						sts[i].k = sc.nextInt();
+						sts[i].setK(sc.nextInt());
 						System.out.println("영어 점수를 입력하세요");
-						sts[i].e = sc.nextInt();
+						sts[i].setE(sc.nextInt());
 						System.out.println("수학 점수를 입력하세요");
-						sts[i].m = sc.nextInt();
+						sts[i].setM(sc.nextInt());
 //						
 				}
 				return sts;
 	}
 	public void addStudent(String[] makeStudent) {
 		StudentView sv = new StudentView();
+		Student student = new Student();
+		Student st;	 
 //		학생들의 정보를 받아서 
 	//		학생 한명을 추가
 //	추가가 완료된 학생정보들을 리턴
 		sv.viewAll(makeStudents());
 	System.out.println("학생 정보 추가를 시작합니다.");
+//	st.length;
+
+ 	}
 	
-		
-	
-	
-	
+	public void removeStudent()
+	{
+		//학생들의 정보를 받아서 삭제하려는 학생의 번호를 입력받음
+//		학생의 번호와 일치하는 학생을 삭제
+//		남은 학생정보들을 리턴
+	}
+	public void addStudent()
+	{
+		//학생들의 정보를 받아서 학생 한명을 추가 후 학생 정보들을 리턴
 	}
 }

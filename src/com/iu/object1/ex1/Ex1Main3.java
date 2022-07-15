@@ -14,7 +14,7 @@ public class Ex1Main3 {
 			Student st = new Student();
 			stus[i] = st;
 			System.out.println("이름 입력");
-			stus[i].names = sc.next(); 
+			stus[i].setNames(sc.next()); 
 //			st.names = sc.next(); 위에랑 같음
 		}
 
