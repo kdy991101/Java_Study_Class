@@ -6,7 +6,7 @@
 //	//검색하고 싶은 학생의 번호를 입력 받아
 ////	같은 번호의 학생을 찾아서 그 학생 한명을 리턴
 ////	없으면 null
-//	public Student findStudent(StudentJaseub[] studentsJaseub) {
+//	public StudentJaseub findStudent(StudentJaseub[] studentsJaseub) {
 //		Scanner sc = new Scanner(System.in);
 //		System.out.println("번호를 입력하세요.");
 //		int num = sc.nextInt();
